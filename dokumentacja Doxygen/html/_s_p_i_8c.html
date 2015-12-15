@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>My Project: Data Structures</title>
+<title>My Project: D:/Program Files/doxygen/bin/Źródła/SPI.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,6 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">My Project
-   &#160;<span id="projectnumber">0.1</span>
    </div>
   </td>
  </tr>
@@ -47,8 +46,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,9 +68,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -86,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('annotated.html','');});
+$(document).ready(function(){initNavTree('_s_p_i_8c.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -104,20 +102,75 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Data Structures</div>  </div>
+<div class="title">SPI.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here are the data structures with brief descriptions:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="struct_t__card.html" target="_self">T_card</a></td><td class="desc">Struktura przechowująca dane karty RFID </td></tr>
+<div class="textblock"><code>#include &quot;MKL46Z4.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_s_p_i_8h_source.html">SPI.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afd9b09f58917f0e2d14c61b956eba214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_i_8c.html#afd9b09f58917f0e2d14c61b956eba214">SPI_init</a> (void)</td></tr>
+<tr class="memdesc:afd9b09f58917f0e2d14c61b956eba214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje sprzętowy moduł SPI0.  <a href="#afd9b09f58917f0e2d14c61b956eba214">More...</a><br /></td></tr>
+<tr class="separator:afd9b09f58917f0e2d14c61b956eba214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab854b4f294a4aeef1214b244d875a267"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_i_8c.html#ab854b4f294a4aeef1214b244d875a267">SPI_transmit</a> (uint8_t data)</td></tr>
+<tr class="memdesc:ab854b4f294a4aeef1214b244d875a267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokonuje transferu jednego bajtu na magistrali SPI.  <a href="#ab854b4f294a4aeef1214b244d875a267">More...</a><br /></td></tr>
+<tr class="separator:ab854b4f294a4aeef1214b244d875a267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="afd9b09f58917f0e2d14c61b956eba214"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SPI_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicjalizuje sprzętowy moduł SPI0. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab854b4f294a4aeef1214b244d875a267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SPI_transmit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dokonuje transferu jednego bajtu na magistrali SPI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uint8_t</td><td>data - bajt do wysłania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zwraca bajt odebrany od urządzenia</dd></dl>
+<p>Wysłanie jednego bajtu jest równoważne z odbraniem bajtu nadawanego z urzadzenia SLAVE </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_1ff23fa220c4526e4007f47da8b9a850.html">Źródła</a></li><li class="navelem"><a class="el" href="_s_p_i_8c.html">SPI.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

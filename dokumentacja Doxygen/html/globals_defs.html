@@ -32,7 +32,6 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">My Project
-   &#160;<span id="projectnumber">0.1</span>
    </div>
   </td>
  </tr>
@@ -75,21 +74,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
-      <li class="current"><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
-      <li><a href="globals_defs.html"><span>Macros</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li><a href="#index_b"><span>b</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
-      <li><a href="#index_e"><span>e</span></a></li>
-      <li><a href="#index_f"><span>f</span></a></li>
-      <li><a href="#index_m"><span>m</span></a></li>
-      <li><a href="#index_r"><span>r</span></a></li>
-      <li class="current"><a href="#index_s"><span>s</span></a></li>
+      <li class="current"><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -104,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('globals.html','');});
+$(document).ready(function(){initNavTree('globals_defs.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -122,16 +110,10 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
-
-<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+&#160;<ul>
 <li>BUSY
 : <a class="el" href="_r_f_i_d_8h.html#ab5be0aaddb58ffb9cb20c12530d66316">RFID.h</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>CARD_ARRAY_SIZE
 : <a class="el" href="_r_f_i_d_8h.html#a82215e04ed0a2f9502bf2f5dcfe062f3">RFID.h</a>
 </li>
@@ -141,30 +123,14 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>CARD_NOT_FOUND
 : <a class="el" href="_r_f_i_d_8h.html#a10eca1e4fdd25c36bde553d988c5b45b">RFID.h</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>ERROR
 : <a class="el" href="_r_f_i_d_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5">RFID.h</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>FREE
 : <a class="el" href="_r_f_i_d_8h.html#a9a8e700d56e7d858108b755ad3edb52e">RFID.h</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>MAX_LEN
 : <a class="el" href="_r_f_i_d_8h.html#aabf4f709c8199e41cf279c77112345fe">RFID.h</a>
-</li>
-<li>MIFARE_CARD_DATABASE
-: <a class="el" href="_r_f_i_d_8c.html#a7a66a75b2b6758907686c807a8a04898">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#a7a66a75b2b6758907686c807a8a04898">RFID.h</a>
 </li>
 <li>MISO_MUX
 : <a class="el" href="_s_p_i_8h.html#abbf53c901a23edf0072e7e5cd3ce00f0">SPI.h</a>
@@ -190,22 +156,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>MOSI_PTx
 : <a class="el" href="_s_p_i_8h.html#a9c3abc60d116ae4616534f75fb9bfb29">SPI.h</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
-<li>RC522_read()
-: <a class="el" href="_r_f_i_d_8c.html#abf6d10d6b1d8db7d4b65abdd6d58215b">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#abf6d10d6b1d8db7d4b65abdd6d58215b">RFID.h</a>
-</li>
-<li>RC522_to_card()
-: <a class="el" href="_r_f_i_d_8h.html#a4743f16882f02c9057fcf990aed93559">RFID.h</a>
-, <a class="el" href="_r_f_i_d_8c.html#a4743f16882f02c9057fcf990aed93559">RFID.c</a>
-</li>
-<li>RC522_write()
-: <a class="el" href="_r_f_i_d_8c.html#affa4d82019384bd679935e19217001fd">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#affa4d82019384bd679935e19217001fd">RFID.h</a>
-</li>
 <li>RESET_NUMBER
 : <a class="el" href="_r_f_i_d_8h.html#a8e724c0b42e25d3d442bb109d9dc4c1e">RFID.h</a>
 </li>
@@ -215,34 +165,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>RESET_PTx
 : <a class="el" href="_r_f_i_d_8h.html#a75b2501b1f7e90edc3b5f6a96cceb488">RFID.h</a>
 </li>
-<li>RFID_add_card_to_database()
-: <a class="el" href="_r_f_i_d_8c.html#af5d58594390b228f9957d8ad475d88da">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#af5d58594390b228f9957d8ad475d88da">RFID.h</a>
-</li>
-<li>RFID_delete_card_from_database()
-: <a class="el" href="_r_f_i_d_8c.html#a2a81474b4c8c8b7b259259b31b0a54c5">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#a2a81474b4c8c8b7b259259b31b0a54c5">RFID.h</a>
-</li>
-<li>RFID_get_card_serial()
-: <a class="el" href="_r_f_i_d_8h.html#a2115f1543597c0e35d78f5764ebd9f84">RFID.h</a>
-, <a class="el" href="_r_f_i_d_8c.html#a2115f1543597c0e35d78f5764ebd9f84">RFID.c</a>
-</li>
-<li>RFID_init()
-: <a class="el" href="_r_f_i_d_8c.html#ada997f4b43ad0305e643dd9daf6d04af">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#ada997f4b43ad0305e643dd9daf6d04af">RFID.h</a>
-</li>
-<li>RFID_request()
-: <a class="el" href="_r_f_i_d_8c.html#a9999449420337ad4d1ec79eadb9a74d1">RFID.c</a>
-, <a class="el" href="_r_f_i_d_8h.html#a9999449420337ad4d1ec79eadb9a74d1">RFID.h</a>
-</li>
-<li>RFID_show_database()
-: <a class="el" href="_r_f_i_d_8h.html#a8c2bd5af4a67b1b65f158db08c4496f1">RFID.h</a>
-, <a class="el" href="_r_f_i_d_8c.html#a8c2bd5af4a67b1b65f158db08c4496f1">RFID.c</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SCK_MUX
 : <a class="el" href="_s_p_i_8h.html#a7e8c30bc2eb23beda31c23818d74c096">SPI.h</a>
 </li>
@@ -254,14 +176,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>SCK_PTx
 : <a class="el" href="_s_p_i_8h.html#a423a31640f75b6a7ab5d3a3ae0383774">SPI.h</a>
-</li>
-<li>SPI_init()
-: <a class="el" href="_s_p_i_8c.html#afd9b09f58917f0e2d14c61b956eba214">SPI.c</a>
-, <a class="el" href="_s_p_i_8h.html#afd9b09f58917f0e2d14c61b956eba214">SPI.h</a>
-</li>
-<li>SPI_transmit()
-: <a class="el" href="_s_p_i_8h.html#ab854b4f294a4aeef1214b244d875a267">SPI.h</a>
-, <a class="el" href="_s_p_i_8c.html#ab854b4f294a4aeef1214b244d875a267">SPI.c</a>
 </li>
 <li>SS_HIGH
 : <a class="el" href="_s_p_i_8h.html#ac261025972981d54698a3361822c86a9">SPI.h</a>

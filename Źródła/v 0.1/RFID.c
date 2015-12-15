@@ -127,9 +127,9 @@ uint8_t	RFID_request(uint8_t *tag_type)
  */
 uint8_t RC522_to_card(uint8_t cmd, uint8_t *send_data, uint8_t send_data_len, uint8_t *back_data, uint32_t *back_data_len)
 {
-	uint8_t status = ERROR;					/// zmienna statusowa, jej zawartość jest zwracana po zakończeniu funckji 
-	uint8_t irqEn = 0x00;						/// póki co nie wiem co to wgl jest :(
-	uint8_t waitIRq = 0x00;         /// póki co nie wiem co to wgl jest :(
+	uint8_t status = ERROR;					// zmienna statusowa, jej zawartość jest zwracana po zakończeniu funckji 
+	uint8_t irqEn = 0x00;						// póki co nie wiem co to wgl jest :(
+	uint8_t waitIRq = 0x00;         // póki co nie wiem co to wgl jest :(
 	uint8_t lastBits;
 	uint8_t n;
 	uint8_t	tmp;
@@ -424,6 +424,7 @@ uint8_t RFID_show_database(void)
  */
 uint8_t RFID_delete_card_from_database(void)
 {
+
 	uint8_t i,x;	// dla petli 
 	enum st {init,search_card,delete_card};
 	uint8_t byte;
@@ -470,6 +471,7 @@ uint8_t RFID_delete_card_from_database(void)
 			if(good_byte==5) 
 			{
 				state=init;
+				good_byte=0;
 				UART_send(UART2,"Karta zostala usunieta! \n\r");
 				// zeby usunac wypelniamy uzyte pola zerami 
 				// a dana komorke ustawiamy na wartosc free
@@ -485,8 +487,7 @@ uint8_t RFID_delete_card_from_database(void)
 				state=init;
 				break;
 			}		
-			if (state==init) break;
-			else { UART_send(UART2,"Karta nie znana\n\r"); state=init;}
+			else {state=init;}
 		}
 		break;
 	}
