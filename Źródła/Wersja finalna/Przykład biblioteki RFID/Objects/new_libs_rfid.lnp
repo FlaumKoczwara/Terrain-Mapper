@@ -1,0 +1,13 @@
+--cpu Cortex-M0+
+".\objects\key.o"
+".\objects\main.o"
+".\objects\rfid.o"
+".\objects\spi.o"
+".\objects\systick.o"
+".\objects\uart.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\new_libs_rfid.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\new_libs_rfid.map" -o .\Objects\new_libs_rfid.axf

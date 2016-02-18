@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['rc522_5fread',['RC522_read',['../_r_f_i_d_8c.html#abf6d10d6b1d8db7d4b65abdd6d58215b',1,'RFID.c']]],
+  ['rc522_5fto_5fcard',['RC522_to_card',['../_r_f_i_d_8c.html#a4743f16882f02c9057fcf990aed93559',1,'RFID.c']]],
+  ['rc522_5fwrite',['RC522_write',['../_r_f_i_d_8c.html#affa4d82019384bd679935e19217001fd',1,'RFID.c']]],
+  ['receive_5fcmd',['Receive_CMD',['../_r_f_i_d__registers_8h.html#a64fc96b8a93a598d0c9c76d3c331ccdd',1,'RFID_registers.h']]],
+  ['reserved_5fcmd',['Reserved_CMD',['../_r_f_i_d__registers_8h.html#a22274db066386cfd5e6ed4fd08353b15',1,'RFID_registers.h']]],
+  ['reset_5fnumber',['RESET_NUMBER',['../_r_f_i_d_8h.html#a8e724c0b42e25d3d442bb109d9dc4c1e',1,'RFID.h']]],
+  ['reset_5fportx',['RESET_PORTx',['../_r_f_i_d_8h.html#a29fc3932f00fb4c966559139cc86529b',1,'RFID.h']]],
+  ['reset_5fptx',['RESET_PTx',['../_r_f_i_d_8h.html#a75b2501b1f7e90edc3b5f6a96cceb488',1,'RFID.h']]],
+  ['rfcfgreg',['RFCfgReg',['../_r_f_i_d__registers_8h.html#ade48d63522b97dbb34800fcd2c1634a9',1,'RFID_registers.h']]],
+  ['rfid_2ec',['RFID.c',['../_r_f_i_d_8c.html',1,'']]],
+  ['rfid_2eh',['RFID.h',['../_r_f_i_d_8h.html',1,'']]],
+  ['rfid_5fadd_5fcard_5fto_5fdatabase',['RFID_add_card_to_database',['../_r_f_i_d_8c.html#af5d58594390b228f9957d8ad475d88da',1,'RFID_add_card_to_database(void):&#160;RFID.c'],['../_r_f_i_d_8h.html#af5d58594390b228f9957d8ad475d88da',1,'RFID_add_card_to_database(void):&#160;RFID.c']]],
+  ['rfid_5fdelete_5fcard_5ffrom_5fdatabase',['RFID_delete_card_from_database',['../_r_f_i_d_8c.html#a2a81474b4c8c8b7b259259b31b0a54c5',1,'RFID_delete_card_from_database(void):&#160;RFID.c'],['../_r_f_i_d_8h.html#a2a81474b4c8c8b7b259259b31b0a54c5',1,'RFID_delete_card_from_database(void):&#160;RFID.c']]],
+  ['rfid_5fget_5fserial_5fnumber',['RFID_get_serial_number',['../_r_f_i_d_8c.html#a9cb7426712990283fda658e8b662e24f',1,'RFID_get_serial_number(uint8_t *serial_number):&#160;RFID.c'],['../_r_f_i_d_8h.html#a9cb7426712990283fda658e8b662e24f',1,'RFID_get_serial_number(uint8_t *serial_number):&#160;RFID.c']]],
+  ['rfid_5finit',['RFID_init',['../_r_f_i_d_8c.html#ada997f4b43ad0305e643dd9daf6d04af',1,'RFID_init(void):&#160;RFID.c'],['../_r_f_i_d_8h.html#ada997f4b43ad0305e643dd9daf6d04af',1,'RFID_init(void):&#160;RFID.c']]],
+  ['rfid_5fread_5fcard',['RFID_read_card',['../_r_f_i_d_8c.html#a93db3fa8456688304881a65961e22ffb',1,'RFID.c']]],
+  ['rfid_5fregisters_2eh',['RFID_registers.h',['../_r_f_i_d__registers_8h.html',1,'']]],
+  ['rfid_5frequest',['RFID_request',['../_r_f_i_d_8c.html#a9999449420337ad4d1ec79eadb9a74d1',1,'RFID.c']]],
+  ['rfid_5fsearch_5fdatabase',['RFID_search_database',['../_r_f_i_d_8c.html#ae6ebb8eaacdcf9d5f7f4eca37df30b70',1,'RFID_search_database(uint8_t *serial_number):&#160;RFID.c'],['../_r_f_i_d_8h.html#ae6ebb8eaacdcf9d5f7f4eca37df30b70',1,'RFID_search_database(uint8_t *serial_number):&#160;RFID.c']]],
+  ['rfid_5fshow_5fdatabase',['RFID_show_database',['../_r_f_i_d_8c.html#a1b2693c6515ea4b2e6bc87cadf1b5335',1,'RFID_show_database(uint8_t tab[CARD_ARRAY_SIZE][5]):&#160;RFID.c'],['../_r_f_i_d_8h.html#a1b2693c6515ea4b2e6bc87cadf1b5335',1,'RFID_show_database(uint8_t tab[CARD_ARRAY_SIZE][5]):&#160;RFID.c']]],
+  ['rxmodereg',['RxModeReg',['../_r_f_i_d__registers_8h.html#a8f5cac166a6e071a21b0de425ace2c08',1,'RFID_registers.h']]],
+  ['rxselreg',['RxSelReg',['../_r_f_i_d__registers_8h.html#adc0cec9ec2deebf4fe0ef02dc1c12126',1,'RFID_registers.h']]],
+  ['rxthresholdreg',['RxThresholdReg',['../_r_f_i_d__registers_8h.html#a2f36eba986694db36c70a0cdaace1980',1,'RFID_registers.h']]]
+];

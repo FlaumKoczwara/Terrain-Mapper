@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['t_5fcard',['T_card',['../struct_t__card.html',1,'']]],
+  ['tcountervalreg_5f1',['TCounterValReg_1',['../_r_f_i_d__registers_8h.html#a1c2e27cb670b4a5c881fd897a0bf7a88',1,'RFID_registers.h']]],
+  ['tcountervalreg_5f2',['TCounterValReg_2',['../_r_f_i_d__registers_8h.html#a2c1558710b935d0e4ad36af406c0b9f7',1,'RFID_registers.h']]],
+  ['testadcreg',['TestADCReg',['../_r_f_i_d__registers_8h.html#a42caced832e7d68cb4fbf92cd177b87a',1,'RFID_registers.h']]],
+  ['testbusreg',['TestBusReg',['../_r_f_i_d__registers_8h.html#a1fcae9e0685d70dba52166ea95cb4a5e',1,'RFID_registers.h']]],
+  ['testdac1reg',['TestDAC1Reg',['../_r_f_i_d__registers_8h.html#a8dca1370c6b58102104fd82157fe52f2',1,'RFID_registers.h']]],
+  ['testdac2reg',['TestDAC2Reg',['../_r_f_i_d__registers_8h.html#ac36e96607f279de26f130061106643ea',1,'RFID_registers.h']]],
+  ['testpinenreg',['TestPinEnReg',['../_r_f_i_d__registers_8h.html#ad8a9f51520b2419f47db3b9b7b66cecd',1,'RFID_registers.h']]],
+  ['testpinvaluereg',['TestPinValueReg',['../_r_f_i_d__registers_8h.html#a34dc9a745a7b6018a03c40a94270ca79',1,'RFID_registers.h']]],
+  ['testsel1reg',['TestSel1Reg',['../_r_f_i_d__registers_8h.html#a3d53b1f388a479064cc8289b4e22718e',1,'RFID_registers.h']]],
+  ['testsel2reg',['TestSel2Reg',['../_r_f_i_d__registers_8h.html#a3aeb16e5b88846f0c067a47d9a872048',1,'RFID_registers.h']]],
+  ['tmodereg',['TModeReg',['../_r_f_i_d__registers_8h.html#ae065d1e6e107bb5de7b56461a19e2813',1,'RFID_registers.h']]],
+  ['tprescalerreg',['TPrescalerReg',['../_r_f_i_d__registers_8h.html#a81934f24d23e36176e5d1d736c027d89',1,'RFID_registers.h']]],
+  ['transceive_5fcmd',['Transceive_CMD',['../_r_f_i_d__registers_8h.html#a9e54ec9feed690ee6240f07457756713',1,'RFID_registers.h']]],
+  ['transmit_5fcmd',['Transmit_CMD',['../_r_f_i_d__registers_8h.html#a5ebefc77f933d70061772342db2879b2',1,'RFID_registers.h']]],
+  ['treloadreg_5f1',['TReloadReg_1',['../_r_f_i_d__registers_8h.html#a159250bfea56dd0b10b2625ada90543f',1,'RFID_registers.h']]],
+  ['treloadreg_5f2',['TReloadReg_2',['../_r_f_i_d__registers_8h.html#a4ad25268c43a94b3f947fdcbaac9799f',1,'RFID_registers.h']]],
+  ['txaskreg',['TxASKReg',['../_r_f_i_d__registers_8h.html#a4b965abea4d30834909e0db20b7eefa6',1,'RFID_registers.h']]],
+  ['txcontrolreg',['TxControlReg',['../_r_f_i_d__registers_8h.html#a6f23502133168ed37788bdd5aa164250',1,'RFID_registers.h']]],
+  ['txmodereg',['TxModeReg',['../_r_f_i_d__registers_8h.html#a8ad6da6d4e6b35bff370cfbc5baebad4',1,'RFID_registers.h']]],
+  ['txselreg',['TxSelReg',['../_r_f_i_d__registers_8h.html#a68e1e35599f8fcffe0f86551a24524da',1,'RFID_registers.h']]]
+];

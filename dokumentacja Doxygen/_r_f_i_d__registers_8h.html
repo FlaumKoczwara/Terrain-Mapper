@@ -1,0 +1,1365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE: Dokumentacja pliku C:/Users/Arothq/Desktop/BIBLIOTEKA/RFID_registers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tag_rfid.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_r_f_i_d__registers_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku RFID_registers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_r_f_i_d__registers_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ac32e4e55dee5aae9d329bf1213ab942e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ac32e4e55dee5aae9d329bf1213ab942e">PICC_REQIDL</a>&#160;&#160;&#160;0x26</td></tr>
+<tr class="memdesc:ac32e4e55dee5aae9d329bf1213ab942e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Biblioteka do obsługi czujnika RC522.  <a href="#ac32e4e55dee5aae9d329bf1213ab942e">Więcej...</a><br /></td></tr>
+<tr class="separator:ac32e4e55dee5aae9d329bf1213ab942e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3baea59cad406876b263bafa343b2503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a3baea59cad406876b263bafa343b2503">PICC_REQALL</a>&#160;&#160;&#160;0x52</td></tr>
+<tr class="separator:a3baea59cad406876b263bafa343b2503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bdc28be28aa767224647abc0d3ba75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#af5bdc28be28aa767224647abc0d3ba75">PICC_ANTICOLL</a>&#160;&#160;&#160;0x93</td></tr>
+<tr class="separator:af5bdc28be28aa767224647abc0d3ba75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2221e5408bf5040227a553bb9b934905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a2221e5408bf5040227a553bb9b934905">PICC_SElECTTAG</a>&#160;&#160;&#160;0x93</td></tr>
+<tr class="separator:a2221e5408bf5040227a553bb9b934905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bb6233cb2945cdeb7579317ccc2c4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a98bb6233cb2945cdeb7579317ccc2c4e">PICC_AUTHENT1A</a>&#160;&#160;&#160;0x60</td></tr>
+<tr class="separator:a98bb6233cb2945cdeb7579317ccc2c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc43b36b9a349b2507b07036548a976b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#abc43b36b9a349b2507b07036548a976b">PICC_AUTHENT1B</a>&#160;&#160;&#160;0x61</td></tr>
+<tr class="separator:abc43b36b9a349b2507b07036548a976b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e82cd91171531c2acc827b4e93e043a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a7e82cd91171531c2acc827b4e93e043a">PICC_READ</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="separator:a7e82cd91171531c2acc827b4e93e043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b53096dbe416653687139d8a7b0f2b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a6b53096dbe416653687139d8a7b0f2b1">PICC_WRITE</a>&#160;&#160;&#160;0xA0</td></tr>
+<tr class="separator:a6b53096dbe416653687139d8a7b0f2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b46c05bcfd92f4953a9815aa01b53f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a31b46c05bcfd92f4953a9815aa01b53f">PICC_DECREMENT</a>&#160;&#160;&#160;0xC0</td></tr>
+<tr class="separator:a31b46c05bcfd92f4953a9815aa01b53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3509ef7c804340b2fabd6509f5f99e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#abc3509ef7c804340b2fabd6509f5f99e">PICC_INCREMENT</a>&#160;&#160;&#160;0xC1</td></tr>
+<tr class="separator:abc3509ef7c804340b2fabd6509f5f99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27097606fa7c96ae877a4a4c981b78c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a27097606fa7c96ae877a4a4c981b78c6">PICC_RESTORE</a>&#160;&#160;&#160;0xC2</td></tr>
+<tr class="separator:a27097606fa7c96ae877a4a4c981b78c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00a51d67847d980dad027dace41ee5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#af00a51d67847d980dad027dace41ee5b">PICC_TRANSFER</a>&#160;&#160;&#160;0xB0</td></tr>
+<tr class="separator:af00a51d67847d980dad027dace41ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4b1fe89dfb0b4da925702b52b6a8e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#afa4b1fe89dfb0b4da925702b52b6a8e2">PICC_HALT</a>&#160;&#160;&#160;0x50</td></tr>
+<tr class="separator:afa4b1fe89dfb0b4da925702b52b6a8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e10f5842a67b6058f3b75d06e10c73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a69e10f5842a67b6058f3b75d06e10c73">Idle_CMD</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a69e10f5842a67b6058f3b75d06e10c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa178d81a1f6678a9ca7687bb58670422"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#aa178d81a1f6678a9ca7687bb58670422">Mem_CMD</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:aa178d81a1f6678a9ca7687bb58670422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e64759582dc4535707cda9411b9d62d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a9e64759582dc4535707cda9411b9d62d">GenerateRandomId_CMD</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a9e64759582dc4535707cda9411b9d62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef96adbf67197196b6c65a45d4abd67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a4ef96adbf67197196b6c65a45d4abd67">CalcCRC_CMD</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:a4ef96adbf67197196b6c65a45d4abd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebefc77f933d70061772342db2879b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a5ebefc77f933d70061772342db2879b2">Transmit_CMD</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a5ebefc77f933d70061772342db2879b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3ac662a007d69aae970fc4c44696e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#aca3ac662a007d69aae970fc4c44696e9">NoCmdChange_CMD</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:aca3ac662a007d69aae970fc4c44696e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fc96b8a93a598d0c9c76d3c331ccdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a64fc96b8a93a598d0c9c76d3c331ccdd">Receive_CMD</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:a64fc96b8a93a598d0c9c76d3c331ccdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e54ec9feed690ee6240f07457756713"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a9e54ec9feed690ee6240f07457756713">Transceive_CMD</a>&#160;&#160;&#160;0x0C</td></tr>
+<tr class="separator:a9e54ec9feed690ee6240f07457756713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22274db066386cfd5e6ed4fd08353b15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a22274db066386cfd5e6ed4fd08353b15">Reserved_CMD</a>&#160;&#160;&#160;0x0D</td></tr>
+<tr class="separator:a22274db066386cfd5e6ed4fd08353b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12651ebd1139d2d98bcdff97f4e26db0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a12651ebd1139d2d98bcdff97f4e26db0">MFAuthent_CMD</a>&#160;&#160;&#160;0x0E</td></tr>
+<tr class="separator:a12651ebd1139d2d98bcdff97f4e26db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001b7f5e6836752bd9b1ce7380df4941"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a001b7f5e6836752bd9b1ce7380df4941">SoftReset_CMD</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="separator:a001b7f5e6836752bd9b1ce7380df4941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73459b7819839fb3cda32ce4db1fe18c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a73459b7819839fb3cda32ce4db1fe18c">Page0_Reserved_1</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a73459b7819839fb3cda32ce4db1fe18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab715f018b0e36368fe5f1be485ad67be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ab715f018b0e36368fe5f1be485ad67be">CommandReg</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ab715f018b0e36368fe5f1be485ad67be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0892699c08b8a7af02912981049b98e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a0892699c08b8a7af02912981049b98e7">ComIEnReg</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a0892699c08b8a7af02912981049b98e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9862c04923b12c53ed07b6b240967f49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a9862c04923b12c53ed07b6b240967f49">DivIEnReg</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:a9862c04923b12c53ed07b6b240967f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a587c05779c0e1d4675541ab73f707"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a83a587c05779c0e1d4675541ab73f707">ComIrqReg</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a83a587c05779c0e1d4675541ab73f707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4815d0618fa09c28ca7959ed746f98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#acd4815d0618fa09c28ca7959ed746f98">DivIrqReg</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:acd4815d0618fa09c28ca7959ed746f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2e8b989e7904aff9b10b32dedc9917"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#abc2e8b989e7904aff9b10b32dedc9917">ErrorReg</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:abc2e8b989e7904aff9b10b32dedc9917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a5b728ae0dffb94dfcb5338af5e8b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ae0a5b728ae0dffb94dfcb5338af5e8b2">Status1Reg</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:ae0a5b728ae0dffb94dfcb5338af5e8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047cf362c1c71ac5579ff8ad31865a9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a047cf362c1c71ac5579ff8ad31865a9d">Status2Reg</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:a047cf362c1c71ac5579ff8ad31865a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7fc070a911f6602425940a8bf24723"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a8d7fc070a911f6602425940a8bf24723">FIFODataReg</a>&#160;&#160;&#160;0x09</td></tr>
+<tr class="separator:a8d7fc070a911f6602425940a8bf24723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28602505e2096014d80f79079c34e818"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a28602505e2096014d80f79079c34e818">FIFOLevelReg</a>&#160;&#160;&#160;0x0A</td></tr>
+<tr class="separator:a28602505e2096014d80f79079c34e818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698093f01a0430bf6c8324986628efc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a698093f01a0430bf6c8324986628efc2">WaterLevelReg</a>&#160;&#160;&#160;0x0B</td></tr>
+<tr class="separator:a698093f01a0430bf6c8324986628efc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d310babbb266d3f041164c5d0c4f70d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a0d310babbb266d3f041164c5d0c4f70d">ControlReg</a>&#160;&#160;&#160;0x0C</td></tr>
+<tr class="separator:a0d310babbb266d3f041164c5d0c4f70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9c9cfa089558d15387254a5d75a4f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#afc9c9cfa089558d15387254a5d75a4f2">BitFramingReg</a>&#160;&#160;&#160;0x0D</td></tr>
+<tr class="separator:afc9c9cfa089558d15387254a5d75a4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48e70a6c59730abf995220099733a70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#af48e70a6c59730abf995220099733a70">CollReg</a>&#160;&#160;&#160;0x0E</td></tr>
+<tr class="separator:af48e70a6c59730abf995220099733a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45120a0ef3e19dfedc319ea8c6879225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a45120a0ef3e19dfedc319ea8c6879225">Page0_Reserved_2</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="separator:a45120a0ef3e19dfedc319ea8c6879225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd66b5aad6eb9a2a6a056287ffda563"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a1dd66b5aad6eb9a2a6a056287ffda563">Page1_Reserved_1</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a1dd66b5aad6eb9a2a6a056287ffda563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5654c3ad610a27cb9f8c1b680d12cd3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a5654c3ad610a27cb9f8c1b680d12cd3a">ModeReg</a>&#160;&#160;&#160;0x11</td></tr>
+<tr class="separator:a5654c3ad610a27cb9f8c1b680d12cd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad6da6d4e6b35bff370cfbc5baebad4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a8ad6da6d4e6b35bff370cfbc5baebad4">TxModeReg</a>&#160;&#160;&#160;0x12</td></tr>
+<tr class="separator:a8ad6da6d4e6b35bff370cfbc5baebad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5cac166a6e071a21b0de425ace2c08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a8f5cac166a6e071a21b0de425ace2c08">RxModeReg</a>&#160;&#160;&#160;0x13</td></tr>
+<tr class="separator:a8f5cac166a6e071a21b0de425ace2c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f23502133168ed37788bdd5aa164250"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a6f23502133168ed37788bdd5aa164250">TxControlReg</a>&#160;&#160;&#160;0x14</td></tr>
+<tr class="separator:a6f23502133168ed37788bdd5aa164250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b965abea4d30834909e0db20b7eefa6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a4b965abea4d30834909e0db20b7eefa6">TxASKReg</a>&#160;&#160;&#160;0x15</td></tr>
+<tr class="separator:a4b965abea4d30834909e0db20b7eefa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e1e35599f8fcffe0f86551a24524da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a68e1e35599f8fcffe0f86551a24524da">TxSelReg</a>&#160;&#160;&#160;0x16</td></tr>
+<tr class="separator:a68e1e35599f8fcffe0f86551a24524da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0cec9ec2deebf4fe0ef02dc1c12126"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#adc0cec9ec2deebf4fe0ef02dc1c12126">RxSelReg</a>&#160;&#160;&#160;0x17</td></tr>
+<tr class="separator:adc0cec9ec2deebf4fe0ef02dc1c12126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f36eba986694db36c70a0cdaace1980"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a2f36eba986694db36c70a0cdaace1980">RxThresholdReg</a>&#160;&#160;&#160;0x18</td></tr>
+<tr class="separator:a2f36eba986694db36c70a0cdaace1980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790bd1d267b757a488cfe3b9f4ddfbf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a790bd1d267b757a488cfe3b9f4ddfbf8">DemodReg</a>&#160;&#160;&#160;0x19</td></tr>
+<tr class="separator:a790bd1d267b757a488cfe3b9f4ddfbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d26a9175adc9b326f75434cc9a19a97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a7d26a9175adc9b326f75434cc9a19a97">Page1_Reserved_2</a>&#160;&#160;&#160;0x1A</td></tr>
+<tr class="separator:a7d26a9175adc9b326f75434cc9a19a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0f464123a6086abbd6b05f9c5d3b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a8f0f464123a6086abbd6b05f9c5d3b5a">Page1_Reserved_3</a>&#160;&#160;&#160;0x1B</td></tr>
+<tr class="separator:a8f0f464123a6086abbd6b05f9c5d3b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279a51d1bf03f20c9aa67c9115c10b95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a279a51d1bf03f20c9aa67c9115c10b95">MfTxReg</a>&#160;&#160;&#160;0x1C</td></tr>
+<tr class="separator:a279a51d1bf03f20c9aa67c9115c10b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e48dd572f3338d6f4801ff8d275ab5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a6e48dd572f3338d6f4801ff8d275ab5b">MfRxReg</a>&#160;&#160;&#160;0x1D</td></tr>
+<tr class="separator:a6e48dd572f3338d6f4801ff8d275ab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63327641959f1517fc987e5769ecf67a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a63327641959f1517fc987e5769ecf67a">Page1_Reserved_4</a>&#160;&#160;&#160;0x1E</td></tr>
+<tr class="separator:a63327641959f1517fc987e5769ecf67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfc0709caaf8fcb055d9e02293c3e79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a1dfc0709caaf8fcb055d9e02293c3e79">SerialSpeedReg</a>&#160;&#160;&#160;0x1F</td></tr>
+<tr class="separator:a1dfc0709caaf8fcb055d9e02293c3e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4eba086d1725c6a9d8dfe2de3d9955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#aaa4eba086d1725c6a9d8dfe2de3d9955">Page2_Reserved_1</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:aaa4eba086d1725c6a9d8dfe2de3d9955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825310a4cae923cdf75b7985e14c0764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a825310a4cae923cdf75b7985e14c0764">CRCResultReg_1</a>&#160;&#160;&#160;0x21</td></tr>
+<tr class="separator:a825310a4cae923cdf75b7985e14c0764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5e567784855cab78f1663bd076f665"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a0c5e567784855cab78f1663bd076f665">CRCResultReg_2</a>&#160;&#160;&#160;0x22</td></tr>
+<tr class="separator:a0c5e567784855cab78f1663bd076f665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26be58877fb58f89f13c83c8b486ac7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a26be58877fb58f89f13c83c8b486ac7f">Page2_Reserved_2</a>&#160;&#160;&#160;0x23</td></tr>
+<tr class="separator:a26be58877fb58f89f13c83c8b486ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0620bc106f51432942e55f473befeffd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a0620bc106f51432942e55f473befeffd">ModWidthReg</a>&#160;&#160;&#160;0x24</td></tr>
+<tr class="separator:a0620bc106f51432942e55f473befeffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7555867d182eee8be665998c6fbfa56f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a7555867d182eee8be665998c6fbfa56f">Page2_Reserved_3</a>&#160;&#160;&#160;0x25</td></tr>
+<tr class="separator:a7555867d182eee8be665998c6fbfa56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade48d63522b97dbb34800fcd2c1634a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ade48d63522b97dbb34800fcd2c1634a9">RFCfgReg</a>&#160;&#160;&#160;0x26</td></tr>
+<tr class="separator:ade48d63522b97dbb34800fcd2c1634a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40729e11c68c4ed8dc353451438eb317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a40729e11c68c4ed8dc353451438eb317">GsNReg</a>&#160;&#160;&#160;0x27</td></tr>
+<tr class="separator:a40729e11c68c4ed8dc353451438eb317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217e920058386b121716637eeac50c7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a217e920058386b121716637eeac50c7a">CWGsPReg</a>&#160;&#160;&#160;0x28</td></tr>
+<tr class="separator:a217e920058386b121716637eeac50c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab5e9f1a2910509997985e9d9c8d7d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#aeab5e9f1a2910509997985e9d9c8d7d1">ModGsPReg</a>&#160;&#160;&#160;0x29</td></tr>
+<tr class="separator:aeab5e9f1a2910509997985e9d9c8d7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae065d1e6e107bb5de7b56461a19e2813"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ae065d1e6e107bb5de7b56461a19e2813">TModeReg</a>&#160;&#160;&#160;0x2A</td></tr>
+<tr class="separator:ae065d1e6e107bb5de7b56461a19e2813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81934f24d23e36176e5d1d736c027d89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a81934f24d23e36176e5d1d736c027d89">TPrescalerReg</a>&#160;&#160;&#160;0x2B</td></tr>
+<tr class="separator:a81934f24d23e36176e5d1d736c027d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159250bfea56dd0b10b2625ada90543f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a159250bfea56dd0b10b2625ada90543f">TReloadReg_1</a>&#160;&#160;&#160;0x2C</td></tr>
+<tr class="separator:a159250bfea56dd0b10b2625ada90543f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad25268c43a94b3f947fdcbaac9799f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a4ad25268c43a94b3f947fdcbaac9799f">TReloadReg_2</a>&#160;&#160;&#160;0x2D</td></tr>
+<tr class="separator:a4ad25268c43a94b3f947fdcbaac9799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2e27cb670b4a5c881fd897a0bf7a88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a1c2e27cb670b4a5c881fd897a0bf7a88">TCounterValReg_1</a>&#160;&#160;&#160;0x2E</td></tr>
+<tr class="separator:a1c2e27cb670b4a5c881fd897a0bf7a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1558710b935d0e4ad36af406c0b9f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a2c1558710b935d0e4ad36af406c0b9f7">TCounterValReg_2</a>&#160;&#160;&#160;0x2F</td></tr>
+<tr class="separator:a2c1558710b935d0e4ad36af406c0b9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416e16222387851426ba97f33c59bd2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a416e16222387851426ba97f33c59bd2e">Page3_Reserved_1</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="separator:a416e16222387851426ba97f33c59bd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d53b1f388a479064cc8289b4e22718e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a3d53b1f388a479064cc8289b4e22718e">TestSel1Reg</a>&#160;&#160;&#160;0x31</td></tr>
+<tr class="separator:a3d53b1f388a479064cc8289b4e22718e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aeb16e5b88846f0c067a47d9a872048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a3aeb16e5b88846f0c067a47d9a872048">TestSel2Reg</a>&#160;&#160;&#160;0x32</td></tr>
+<tr class="separator:a3aeb16e5b88846f0c067a47d9a872048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a9f51520b2419f47db3b9b7b66cecd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ad8a9f51520b2419f47db3b9b7b66cecd">TestPinEnReg</a>&#160;&#160;&#160;0x33</td></tr>
+<tr class="separator:ad8a9f51520b2419f47db3b9b7b66cecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34dc9a745a7b6018a03c40a94270ca79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a34dc9a745a7b6018a03c40a94270ca79">TestPinValueReg</a>&#160;&#160;&#160;0x34</td></tr>
+<tr class="separator:a34dc9a745a7b6018a03c40a94270ca79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcae9e0685d70dba52166ea95cb4a5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a1fcae9e0685d70dba52166ea95cb4a5e">TestBusReg</a>&#160;&#160;&#160;0x35</td></tr>
+<tr class="separator:a1fcae9e0685d70dba52166ea95cb4a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6677f7d45f0d09747f31abb53ac8bc5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a6677f7d45f0d09747f31abb53ac8bc5f">AutoTestReg</a>&#160;&#160;&#160;0x36</td></tr>
+<tr class="separator:a6677f7d45f0d09747f31abb53ac8bc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bbf700c231c72363dc9000e95bc5f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ae2bbf700c231c72363dc9000e95bc5f1">VersionReg</a>&#160;&#160;&#160;0x37</td></tr>
+<tr class="separator:ae2bbf700c231c72363dc9000e95bc5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13306000e9610d6fb532506d2370371"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ae13306000e9610d6fb532506d2370371">AnalogTestReg</a>&#160;&#160;&#160;0x38</td></tr>
+<tr class="separator:ae13306000e9610d6fb532506d2370371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dca1370c6b58102104fd82157fe52f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a8dca1370c6b58102104fd82157fe52f2">TestDAC1Reg</a>&#160;&#160;&#160;0x39</td></tr>
+<tr class="separator:a8dca1370c6b58102104fd82157fe52f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36e96607f279de26f130061106643ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#ac36e96607f279de26f130061106643ea">TestDAC2Reg</a>&#160;&#160;&#160;0x3A</td></tr>
+<tr class="separator:ac36e96607f279de26f130061106643ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42caced832e7d68cb4fbf92cd177b87a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a42caced832e7d68cb4fbf92cd177b87a">TestADCReg</a>&#160;&#160;&#160;0x3B</td></tr>
+<tr class="separator:a42caced832e7d68cb4fbf92cd177b87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1f640e4e385ebda9c198fb9d861d0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#aac1f640e4e385ebda9c198fb9d861d0b">Page3_Reserved_2</a>&#160;&#160;&#160;0x3C</td></tr>
+<tr class="separator:aac1f640e4e385ebda9c198fb9d861d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa004d06ce136128088a737b2d348b127"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#aa004d06ce136128088a737b2d348b127">Page3_Reserved_3</a>&#160;&#160;&#160;0x3D</td></tr>
+<tr class="separator:aa004d06ce136128088a737b2d348b127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470bfeebcaf0e79b2f9a4e5711f61a77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a470bfeebcaf0e79b2f9a4e5711f61a77">Page3_Reserved_4</a>&#160;&#160;&#160;0x3E</td></tr>
+<tr class="separator:a470bfeebcaf0e79b2f9a4e5711f61a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3597655eb8101b3b843f915d6a246b54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f_i_d__registers_8h.html#a3597655eb8101b3b843f915d6a246b54">Page3_Reserved_5</a>&#160;&#160;&#160;0x3F</td></tr>
+<tr class="separator:a3597655eb8101b3b843f915d6a246b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji</h2>
+<a class="anchor" id="ae13306000e9610d6fb532506d2370371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AnalogTestReg&#160;&#160;&#160;0x38</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6677f7d45f0d09747f31abb53ac8bc5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AutoTestReg&#160;&#160;&#160;0x36</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc9c9cfa089558d15387254a5d75a4f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BitFramingReg&#160;&#160;&#160;0x0D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ef96adbf67197196b6c65a45d4abd67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CalcCRC_CMD&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af48e70a6c59730abf995220099733a70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CollReg&#160;&#160;&#160;0x0E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0892699c08b8a7af02912981049b98e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ComIEnReg&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83a587c05779c0e1d4675541ab73f707"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ComIrqReg&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab715f018b0e36368fe5f1be485ad67be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CommandReg&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d310babbb266d3f041164c5d0c4f70d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ControlReg&#160;&#160;&#160;0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a825310a4cae923cdf75b7985e14c0764"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRCResultReg_1&#160;&#160;&#160;0x21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c5e567784855cab78f1663bd076f665"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRCResultReg_2&#160;&#160;&#160;0x22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a217e920058386b121716637eeac50c7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CWGsPReg&#160;&#160;&#160;0x28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a790bd1d267b757a488cfe3b9f4ddfbf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DemodReg&#160;&#160;&#160;0x19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9862c04923b12c53ed07b6b240967f49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DivIEnReg&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd4815d0618fa09c28ca7959ed746f98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DivIrqReg&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc2e8b989e7904aff9b10b32dedc9917"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ErrorReg&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d7fc070a911f6602425940a8bf24723"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIFODataReg&#160;&#160;&#160;0x09</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a28602505e2096014d80f79079c34e818"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIFOLevelReg&#160;&#160;&#160;0x0A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e64759582dc4535707cda9411b9d62d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GenerateRandomId_CMD&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40729e11c68c4ed8dc353451438eb317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GsNReg&#160;&#160;&#160;0x27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69e10f5842a67b6058f3b75d06e10c73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Idle_CMD&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa178d81a1f6678a9ca7687bb58670422"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Mem_CMD&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12651ebd1139d2d98bcdff97f4e26db0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MFAuthent_CMD&#160;&#160;&#160;0x0E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e48dd572f3338d6f4801ff8d275ab5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MfRxReg&#160;&#160;&#160;0x1D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a279a51d1bf03f20c9aa67c9115c10b95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MfTxReg&#160;&#160;&#160;0x1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5654c3ad610a27cb9f8c1b680d12cd3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ModeReg&#160;&#160;&#160;0x11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeab5e9f1a2910509997985e9d9c8d7d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ModGsPReg&#160;&#160;&#160;0x29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0620bc106f51432942e55f473befeffd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ModWidthReg&#160;&#160;&#160;0x24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca3ac662a007d69aae970fc4c44696e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NoCmdChange_CMD&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73459b7819839fb3cda32ce4db1fe18c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page0_Reserved_1&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45120a0ef3e19dfedc319ea8c6879225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page0_Reserved_2&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1dd66b5aad6eb9a2a6a056287ffda563"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page1_Reserved_1&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d26a9175adc9b326f75434cc9a19a97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page1_Reserved_2&#160;&#160;&#160;0x1A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f0f464123a6086abbd6b05f9c5d3b5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page1_Reserved_3&#160;&#160;&#160;0x1B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63327641959f1517fc987e5769ecf67a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page1_Reserved_4&#160;&#160;&#160;0x1E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa4eba086d1725c6a9d8dfe2de3d9955"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page2_Reserved_1&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26be58877fb58f89f13c83c8b486ac7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page2_Reserved_2&#160;&#160;&#160;0x23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7555867d182eee8be665998c6fbfa56f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page2_Reserved_3&#160;&#160;&#160;0x25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a416e16222387851426ba97f33c59bd2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page3_Reserved_1&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac1f640e4e385ebda9c198fb9d861d0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page3_Reserved_2&#160;&#160;&#160;0x3C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa004d06ce136128088a737b2d348b127"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page3_Reserved_3&#160;&#160;&#160;0x3D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a470bfeebcaf0e79b2f9a4e5711f61a77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page3_Reserved_4&#160;&#160;&#160;0x3E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3597655eb8101b3b843f915d6a246b54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Page3_Reserved_5&#160;&#160;&#160;0x3F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5bdc28be28aa767224647abc0d3ba75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_ANTICOLL&#160;&#160;&#160;0x93</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98bb6233cb2945cdeb7579317ccc2c4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_AUTHENT1A&#160;&#160;&#160;0x60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc43b36b9a349b2507b07036548a976b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_AUTHENT1B&#160;&#160;&#160;0x61</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31b46c05bcfd92f4953a9815aa01b53f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_DECREMENT&#160;&#160;&#160;0xC0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa4b1fe89dfb0b4da925702b52b6a8e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_HALT&#160;&#160;&#160;0x50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc3509ef7c804340b2fabd6509f5f99e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_INCREMENT&#160;&#160;&#160;0xC1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e82cd91171531c2acc827b4e93e043a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_READ&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3baea59cad406876b263bafa343b2503"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_REQALL&#160;&#160;&#160;0x52</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac32e4e55dee5aae9d329bf1213ab942e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_REQIDL&#160;&#160;&#160;0x26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Biblioteka do obsługi czujnika RC522. </p>
+<dl class="section author"><dt>Autor</dt><dd>Maciej Flaum Tomasz Koczwara </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27097606fa7c96ae877a4a4c981b78c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_RESTORE&#160;&#160;&#160;0xC2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2221e5408bf5040227a553bb9b934905"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_SElECTTAG&#160;&#160;&#160;0x93</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af00a51d67847d980dad027dace41ee5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_TRANSFER&#160;&#160;&#160;0xB0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b53096dbe416653687139d8a7b0f2b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PICC_WRITE&#160;&#160;&#160;0xA0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64fc96b8a93a598d0c9c76d3c331ccdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Receive_CMD&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22274db066386cfd5e6ed4fd08353b15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Reserved_CMD&#160;&#160;&#160;0x0D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade48d63522b97dbb34800fcd2c1634a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RFCfgReg&#160;&#160;&#160;0x26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f5cac166a6e071a21b0de425ace2c08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RxModeReg&#160;&#160;&#160;0x13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc0cec9ec2deebf4fe0ef02dc1c12126"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RxSelReg&#160;&#160;&#160;0x17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f36eba986694db36c70a0cdaace1980"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RxThresholdReg&#160;&#160;&#160;0x18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1dfc0709caaf8fcb055d9e02293c3e79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SerialSpeedReg&#160;&#160;&#160;0x1F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a001b7f5e6836752bd9b1ce7380df4941"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SoftReset_CMD&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0a5b728ae0dffb94dfcb5338af5e8b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Status1Reg&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a047cf362c1c71ac5579ff8ad31865a9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Status2Reg&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c2e27cb670b4a5c881fd897a0bf7a88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCounterValReg_1&#160;&#160;&#160;0x2E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c1558710b935d0e4ad36af406c0b9f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCounterValReg_2&#160;&#160;&#160;0x2F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42caced832e7d68cb4fbf92cd177b87a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestADCReg&#160;&#160;&#160;0x3B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1fcae9e0685d70dba52166ea95cb4a5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestBusReg&#160;&#160;&#160;0x35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8dca1370c6b58102104fd82157fe52f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestDAC1Reg&#160;&#160;&#160;0x39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac36e96607f279de26f130061106643ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestDAC2Reg&#160;&#160;&#160;0x3A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8a9f51520b2419f47db3b9b7b66cecd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestPinEnReg&#160;&#160;&#160;0x33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34dc9a745a7b6018a03c40a94270ca79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestPinValueReg&#160;&#160;&#160;0x34</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d53b1f388a479064cc8289b4e22718e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestSel1Reg&#160;&#160;&#160;0x31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3aeb16e5b88846f0c067a47d9a872048"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TestSel2Reg&#160;&#160;&#160;0x32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae065d1e6e107bb5de7b56461a19e2813"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TModeReg&#160;&#160;&#160;0x2A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81934f24d23e36176e5d1d736c027d89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TPrescalerReg&#160;&#160;&#160;0x2B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e54ec9feed690ee6240f07457756713"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Transceive_CMD&#160;&#160;&#160;0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ebefc77f933d70061772342db2879b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Transmit_CMD&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a159250bfea56dd0b10b2625ada90543f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TReloadReg_1&#160;&#160;&#160;0x2C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ad25268c43a94b3f947fdcbaac9799f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TReloadReg_2&#160;&#160;&#160;0x2D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b965abea4d30834909e0db20b7eefa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TxASKReg&#160;&#160;&#160;0x15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f23502133168ed37788bdd5aa164250"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TxControlReg&#160;&#160;&#160;0x14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ad6da6d4e6b35bff370cfbc5baebad4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TxModeReg&#160;&#160;&#160;0x12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68e1e35599f8fcffe0f86551a24524da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TxSelReg&#160;&#160;&#160;0x16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2bbf700c231c72363dc9000e95bc5f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VersionReg&#160;&#160;&#160;0x37</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a698093f01a0430bf6c8324986628efc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WaterLevelReg&#160;&#160;&#160;0x0B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a68287e9f32daf61beee6bc90e5fe0fb.html">BIBLIOTEKA</a></li><li class="navelem"><a class="el" href="_r_f_i_d__registers_8h.html">RFID_registers.h</a></li>
+    <li class="footer">Wygenerowano Śr, 17 lut 2016 15:51:30 dla RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

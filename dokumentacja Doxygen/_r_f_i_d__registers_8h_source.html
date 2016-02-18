@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE: Plik źródłowy C:/Users/Arothq/Desktop/BIBLIOTEKA/RFID_registers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tag_rfid.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_r_f_i_d__registers_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RFID_registers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_r_f_i_d__registers_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _RFID_REGISTERS_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _RFID_REGISTERS_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/* KOMENDY STERUJĄCE KARTAMI MIFARE */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ac32e4e55dee5aae9d329bf1213ab942e">   10</a></span>&#160;<span class="preprocessor"># define PICC_REQIDL          0x26              // find the antenna area does not enter hibernation */</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a3baea59cad406876b263bafa343b2503">   11</a></span>&#160;<span class="preprocessor"># define PICC_REQALL          0x52               // find all the cards antenna area */</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#af5bdc28be28aa767224647abc0d3ba75">   12</a></span>&#160;<span class="preprocessor"># define PICC_ANTICOLL        0x93              //  anti-collision*/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a2221e5408bf5040227a553bb9b934905">   13</a></span>&#160;<span class="preprocessor"># define PICC_SElECTTAG       0x93               //  election card*/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a98bb6233cb2945cdeb7579317ccc2c4e">   14</a></span>&#160;<span class="preprocessor"># define PICC_AUTHENT1A       0x60               // authentication key A*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#abc43b36b9a349b2507b07036548a976b">   15</a></span>&#160;<span class="preprocessor"># define PICC_AUTHENT1B       0x61               // authentication key B*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a7e82cd91171531c2acc827b4e93e043a">   16</a></span>&#160;<span class="preprocessor"># define PICC_READ            0x30               //  Read Block*/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a6b53096dbe416653687139d8a7b0f2b1">   17</a></span>&#160;<span class="preprocessor"># define PICC_WRITE           0xA0               //  write block*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a31b46c05bcfd92f4953a9815aa01b53f">   18</a></span>&#160;<span class="preprocessor"># define PICC_DECREMENT       0xC0               //debit*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#abc3509ef7c804340b2fabd6509f5f99e">   19</a></span>&#160;<span class="preprocessor"># define PICC_INCREMENT       0xC1               // recharge*/</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a27097606fa7c96ae877a4a4c981b78c6">   20</a></span>&#160;<span class="preprocessor"># define PICC_RESTORE         0xC2               // transfer block data to the buffer*/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#af00a51d67847d980dad027dace41ee5b">   21</a></span>&#160;<span class="preprocessor"># define PICC_TRANSFER        0xB0               // save the data in the buffer*/</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#afa4b1fe89dfb0b4da925702b52b6a8e2">   22</a></span>&#160;<span class="preprocessor"># define PICC_HALT            0x50               //  Sleep*/</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* KOMENDY STERUJĄCE RC522 */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a69e10f5842a67b6058f3b75d06e10c73">   25</a></span>&#160;<span class="preprocessor">#define Idle_CMD                0x00</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#aa178d81a1f6678a9ca7687bb58670422">   26</a></span>&#160;<span class="preprocessor">#define Mem_CMD                 0x01</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a9e64759582dc4535707cda9411b9d62d">   27</a></span>&#160;<span class="preprocessor">#define GenerateRandomId_CMD    0x02</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a4ef96adbf67197196b6c65a45d4abd67">   28</a></span>&#160;<span class="preprocessor">#define CalcCRC_CMD             0x03</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a5ebefc77f933d70061772342db2879b2">   29</a></span>&#160;<span class="preprocessor">#define Transmit_CMD            0x04</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#aca3ac662a007d69aae970fc4c44696e9">   30</a></span>&#160;<span class="preprocessor">#define NoCmdChange_CMD         0x07</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a64fc96b8a93a598d0c9c76d3c331ccdd">   31</a></span>&#160;<span class="preprocessor">#define Receive_CMD             0x08</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a9e54ec9feed690ee6240f07457756713">   32</a></span>&#160;<span class="preprocessor">#define Transceive_CMD          0x0C</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a22274db066386cfd5e6ed4fd08353b15">   33</a></span>&#160;<span class="preprocessor">#define Reserved_CMD            0x0D</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a12651ebd1139d2d98bcdff97f4e26db0">   34</a></span>&#160;<span class="preprocessor">#define MFAuthent_CMD           0x0E</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a001b7f5e6836752bd9b1ce7380df4941">   35</a></span>&#160;<span class="preprocessor">#define SoftReset_CMD           0x0F</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* MAPA REJESTRÓW RC522 */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Command and Status</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a73459b7819839fb3cda32ce4db1fe18c">   39</a></span>&#160;<span class="preprocessor">#define Page0_Reserved_1    0x00</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ab715f018b0e36368fe5f1be485ad67be">   40</a></span>&#160;<span class="preprocessor">#define CommandReg              0x01</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a0892699c08b8a7af02912981049b98e7">   41</a></span>&#160;<span class="preprocessor">#define ComIEnReg                   0x02</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a9862c04923b12c53ed07b6b240967f49">   42</a></span>&#160;<span class="preprocessor">#define DivIEnReg                   0x03</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a83a587c05779c0e1d4675541ab73f707">   43</a></span>&#160;<span class="preprocessor">#define ComIrqReg                   0x04</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#acd4815d0618fa09c28ca7959ed746f98">   44</a></span>&#160;<span class="preprocessor">#define DivIrqReg                   0x05</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#abc2e8b989e7904aff9b10b32dedc9917">   45</a></span>&#160;<span class="preprocessor">#define ErrorReg                    0x06</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ae0a5b728ae0dffb94dfcb5338af5e8b2">   46</a></span>&#160;<span class="preprocessor">#define Status1Reg              0x07</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a047cf362c1c71ac5579ff8ad31865a9d">   47</a></span>&#160;<span class="preprocessor">#define Status2Reg              0x08</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a8d7fc070a911f6602425940a8bf24723">   48</a></span>&#160;<span class="preprocessor">#define FIFODataReg             0x09</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a28602505e2096014d80f79079c34e818">   49</a></span>&#160;<span class="preprocessor">#define FIFOLevelReg            0x0A</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a698093f01a0430bf6c8324986628efc2">   50</a></span>&#160;<span class="preprocessor">#define WaterLevelReg           0x0B</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a0d310babbb266d3f041164c5d0c4f70d">   51</a></span>&#160;<span class="preprocessor">#define ControlReg              0x0C</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#afc9c9cfa089558d15387254a5d75a4f2">   52</a></span>&#160;<span class="preprocessor">#define BitFramingReg           0x0D</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#af48e70a6c59730abf995220099733a70">   53</a></span>&#160;<span class="preprocessor">#define CollReg                     0x0E</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a45120a0ef3e19dfedc319ea8c6879225">   54</a></span>&#160;<span class="preprocessor">#define Page0_Reserved_2    0x0F</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// Command</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a1dd66b5aad6eb9a2a6a056287ffda563">   57</a></span>&#160;<span class="preprocessor">#define Page1_Reserved_1    0x10</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a5654c3ad610a27cb9f8c1b680d12cd3a">   58</a></span>&#160;<span class="preprocessor">#define ModeReg                     0x11</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a8ad6da6d4e6b35bff370cfbc5baebad4">   59</a></span>&#160;<span class="preprocessor">#define TxModeReg                   0x12</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a8f5cac166a6e071a21b0de425ace2c08">   60</a></span>&#160;<span class="preprocessor">#define RxModeReg                   0x13</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a6f23502133168ed37788bdd5aa164250">   61</a></span>&#160;<span class="preprocessor">#define TxControlReg            0x14</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a4b965abea4d30834909e0db20b7eefa6">   62</a></span>&#160;<span class="preprocessor">#define TxASKReg                    0x15</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a68e1e35599f8fcffe0f86551a24524da">   63</a></span>&#160;<span class="preprocessor">#define TxSelReg                    0x16</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#adc0cec9ec2deebf4fe0ef02dc1c12126">   64</a></span>&#160;<span class="preprocessor">#define RxSelReg                    0x17</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a2f36eba986694db36c70a0cdaace1980">   65</a></span>&#160;<span class="preprocessor">#define RxThresholdReg      0x18</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a790bd1d267b757a488cfe3b9f4ddfbf8">   66</a></span>&#160;<span class="preprocessor">#define DemodReg                    0x19</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a7d26a9175adc9b326f75434cc9a19a97">   67</a></span>&#160;<span class="preprocessor">#define Page1_Reserved_2    0x1A</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a8f0f464123a6086abbd6b05f9c5d3b5a">   68</a></span>&#160;<span class="preprocessor">#define Page1_Reserved_3    0x1B</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a279a51d1bf03f20c9aa67c9115c10b95">   69</a></span>&#160;<span class="preprocessor">#define MfTxReg                     0x1C</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a6e48dd572f3338d6f4801ff8d275ab5b">   70</a></span>&#160;<span class="preprocessor">#define MfRxReg                     0x1D</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a63327641959f1517fc987e5769ecf67a">   71</a></span>&#160;<span class="preprocessor">#define Page1_Reserved_4    0x1E</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a1dfc0709caaf8fcb055d9e02293c3e79">   72</a></span>&#160;<span class="preprocessor">#define SerialSpeedReg      0x1F</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// CFG</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#aaa4eba086d1725c6a9d8dfe2de3d9955">   75</a></span>&#160;<span class="preprocessor">#define Page2_Reserved_1    0x20</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a825310a4cae923cdf75b7985e14c0764">   76</a></span>&#160;<span class="preprocessor">#define CRCResultReg_1      0x21</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a0c5e567784855cab78f1663bd076f665">   77</a></span>&#160;<span class="preprocessor">#define CRCResultReg_2      0x22</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a26be58877fb58f89f13c83c8b486ac7f">   78</a></span>&#160;<span class="preprocessor">#define Page2_Reserved_2    0x23</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a0620bc106f51432942e55f473befeffd">   79</a></span>&#160;<span class="preprocessor">#define ModWidthReg             0x24</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a7555867d182eee8be665998c6fbfa56f">   80</a></span>&#160;<span class="preprocessor">#define Page2_Reserved_3    0x25</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ade48d63522b97dbb34800fcd2c1634a9">   81</a></span>&#160;<span class="preprocessor">#define RFCfgReg                    0x26</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a40729e11c68c4ed8dc353451438eb317">   82</a></span>&#160;<span class="preprocessor">#define GsNReg                      0x27</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a217e920058386b121716637eeac50c7a">   83</a></span>&#160;<span class="preprocessor">#define CWGsPReg                    0x28</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#aeab5e9f1a2910509997985e9d9c8d7d1">   84</a></span>&#160;<span class="preprocessor">#define ModGsPReg                   0x29</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ae065d1e6e107bb5de7b56461a19e2813">   85</a></span>&#160;<span class="preprocessor">#define TModeReg                    0x2A</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a81934f24d23e36176e5d1d736c027d89">   86</a></span>&#160;<span class="preprocessor">#define TPrescalerReg           0x2B</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a159250bfea56dd0b10b2625ada90543f">   87</a></span>&#160;<span class="preprocessor">#define TReloadReg_1            0x2C</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a4ad25268c43a94b3f947fdcbaac9799f">   88</a></span>&#160;<span class="preprocessor">#define TReloadReg_2            0x2D</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a1c2e27cb670b4a5c881fd897a0bf7a88">   89</a></span>&#160;<span class="preprocessor">#define TCounterValReg_1    0x2E</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a2c1558710b935d0e4ad36af406c0b9f7">   90</a></span>&#160;<span class="preprocessor">#define TCounterValReg_2    0x2F</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">// TestRegister</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a416e16222387851426ba97f33c59bd2e">   93</a></span>&#160;<span class="preprocessor">#define Page3_Reserved_1    0x30</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a3d53b1f388a479064cc8289b4e22718e">   94</a></span>&#160;<span class="preprocessor">#define TestSel1Reg             0x31</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a3aeb16e5b88846f0c067a47d9a872048">   95</a></span>&#160;<span class="preprocessor">#define TestSel2Reg             0x32</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ad8a9f51520b2419f47db3b9b7b66cecd">   96</a></span>&#160;<span class="preprocessor">#define TestPinEnReg            0x33</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a34dc9a745a7b6018a03c40a94270ca79">   97</a></span>&#160;<span class="preprocessor">#define TestPinValueReg     0x34</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a1fcae9e0685d70dba52166ea95cb4a5e">   98</a></span>&#160;<span class="preprocessor">#define TestBusReg              0x35</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a6677f7d45f0d09747f31abb53ac8bc5f">   99</a></span>&#160;<span class="preprocessor">#define AutoTestReg             0x36</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ae2bbf700c231c72363dc9000e95bc5f1">  100</a></span>&#160;<span class="preprocessor">#define VersionReg              0x37</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ae13306000e9610d6fb532506d2370371">  101</a></span>&#160;<span class="preprocessor">#define AnalogTestReg           0x38</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a8dca1370c6b58102104fd82157fe52f2">  102</a></span>&#160;<span class="preprocessor">#define TestDAC1Reg             0x39</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#ac36e96607f279de26f130061106643ea">  103</a></span>&#160;<span class="preprocessor">#define TestDAC2Reg             0x3A</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a42caced832e7d68cb4fbf92cd177b87a">  104</a></span>&#160;<span class="preprocessor">#define TestADCReg              0x3B</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#aac1f640e4e385ebda9c198fb9d861d0b">  105</a></span>&#160;<span class="preprocessor">#define Page3_Reserved_2    0x3C</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#aa004d06ce136128088a737b2d348b127">  106</a></span>&#160;<span class="preprocessor">#define Page3_Reserved_3    0x3D</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a470bfeebcaf0e79b2f9a4e5711f61a77">  107</a></span>&#160;<span class="preprocessor">#define Page3_Reserved_4    0x3E</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="_r_f_i_d__registers_8h.html#a3597655eb8101b3b843f915d6a246b54">  108</a></span>&#160;<span class="preprocessor">#define Page3_Reserved_5    0x3F</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a68287e9f32daf61beee6bc90e5fe0fb.html">BIBLIOTEKA</a></li><li class="navelem"><a class="el" href="_r_f_i_d__registers_8h.html">RFID_registers.h</a></li>
+    <li class="footer">Wygenerowano Śr, 17 lut 2016 15:51:30 dla RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

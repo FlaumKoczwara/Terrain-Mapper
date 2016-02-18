@@ -1,0 +1,16 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\systick.o"
+".\objects\uart.o"
+".\objects\ir.o"
+".\objects\motordriver2.o"
+".\objects\spi.o"
+".\objects\rfid.o"
+".\objects\sonar.o"
+".\objects\mapper.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\robot.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\robot.map" -o .\Objects\robot.axf

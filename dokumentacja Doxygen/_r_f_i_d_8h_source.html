@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE: Plik źródłowy C:/Users/Arothq/Desktop/BIBLIOTEKA/RFID.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="tag_rfid.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_r_f_i_d_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RFID.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_r_f_i_d_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _RFID_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _RFID_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;MKL46Z4.h&quot;</span> </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/* KONFIGURACJA ---------------------------------------------------------------------------------------------- */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* Biblioteka wykorzystuje moduł SPI */</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a13a0dc2e64bbbd8be65eec2b43b501ae">   15</a></span>&#160;<span class="preprocessor">#define MISO_PORTx PORTA</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a9fc54b92561bfb4cb93ea453f8ab85ff">   16</a></span>&#160;<span class="preprocessor">#define MISO_PTx PTA</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a3afa36ed1c3427a1725b25877e767a75">   17</a></span>&#160;<span class="preprocessor">#define MISO_NUMBER 17</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#abbf53c901a23edf0072e7e5cd3ce00f0">   18</a></span>&#160;<span class="preprocessor">#define MISO_MUX 2</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a6c362ee07b9571be060da2ddfad90e9b">   20</a></span>&#160;<span class="preprocessor">#define MOSI_PORTx PORTA</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a9c3abc60d116ae4616534f75fb9bfb29">   21</a></span>&#160;<span class="preprocessor">#define MOSI_PTx PTA</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a2d981565b66a86161af598ebe4f4107f">   22</a></span>&#160;<span class="preprocessor">#define MOSI_NUMBER 16</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#ade4fc6e69914bc8b02fa37d07f840d10">   23</a></span>&#160;<span class="preprocessor">#define MOSI_MUX 2</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a39c1d18ca96da0d0944f05aefd96d311">   25</a></span>&#160;<span class="preprocessor">#define SCK_PORTx PORTA</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a423a31640f75b6a7ab5d3a3ae0383774">   26</a></span>&#160;<span class="preprocessor">#define SCK_PTx PTA</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a3b87ddc8c2e585efc29a11f99d481d19">   27</a></span>&#160;<span class="preprocessor">#define SCK_NUMBER 15</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a7e8c30bc2eb23beda31c23818d74c096">   28</a></span>&#160;<span class="preprocessor">#define SCK_MUX 2</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a69ae63718b56ee4a2df1f03cc7adbb45">   30</a></span>&#160;<span class="preprocessor">#define SS_PORTx PORTA</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#af19b128f37a3d325016b61d7b63b9d14">   31</a></span>&#160;<span class="preprocessor">#define SS_PTx PTA</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#ae488e17f0aa3afcfa6593634bd57c81c">   32</a></span>&#160;<span class="preprocessor">#define SS_NUMBER 14</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a79d9c957d6254570d04ec27f76850f6e">   33</a></span>&#160;<span class="preprocessor">#define SS_MUX 1         // GPIO MODE</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#ac261025972981d54698a3361822c86a9">   35</a></span>&#160;<span class="preprocessor">#define SS_HIGH SS_PTx-&gt;PSOR |= (1&lt;&lt;SS_NUMBER)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a56a5d7763d14be8be4b0b7382605bee8">   36</a></span>&#160;<span class="preprocessor">#define SS_LOW  SS_PTx-&gt;PCOR |= (1&lt;&lt;SS_NUMBER)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a29fc3932f00fb4c966559139cc86529b">   38</a></span>&#160;<span class="preprocessor">#define RESET_PORTx  PORTB</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a75b2501b1f7e90edc3b5f6a96cceb488">   39</a></span>&#160;<span class="preprocessor">#define RESET_PTx        PTB</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a8e724c0b42e25d3d442bb109d9dc4c1e">   40</a></span>&#160;<span class="preprocessor">#define RESET_NUMBER 9</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a5e3b8fbd6fbd1d1155f66d1dba28da2e">   42</a></span>&#160;<span class="preprocessor">#define CARD_FOUND          1</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a10eca1e4fdd25c36bde553d988c5b45b">   43</a></span>&#160;<span class="preprocessor">#define CARD_NOT_FOUND  2</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a8fe83ac76edc595f6b98cd4a4127aed5">   44</a></span>&#160;<span class="preprocessor">#define ERROR                       3</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#aabf4f709c8199e41cf279c77112345fe">   46</a></span>&#160;<span class="preprocessor">#define MAX_LEN         16                  </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a82215e04ed0a2f9502bf2f5dcfe062f3">   47</a></span>&#160;<span class="preprocessor">#define CARD_ARRAY_SIZE 16          </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a9a8e700d56e7d858108b755ad3edb52e">   49</a></span>&#160;<span class="preprocessor">#define FREE 0      </span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#ab5be0aaddb58ffb9cb20c12530d66316">   50</a></span>&#160;<span class="preprocessor">#define BUSY 1</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1">   52</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1">DATABASE_STATE</a> {<a class="code" href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1a7a8f0f81f6aef2e61287cdecfd7390ac">CARD_ADDED</a>,<a class="code" href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1ae37048d839f77422192bfd3741449e1a">CARD_DELETED</a>,<a class="code" href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1ab2974655d59d33e3de6c8db87babc310">CARD_IN_BASE</a>,<a class="code" href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1a531e2d8187a657aeb5677e80000fc6f5">CARD_UNKNOWN</a>};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_t__card.html">   58</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{   </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct_t__card.html#a1977c2c166f107867f6692151efde5b9">   61</a></span>&#160;    <span class="keywordtype">char</span> name[20];    </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_t__card.html#a55b4a8851d316c5b420433baab4df265">   63</a></span>&#160;    uint8_t serial_number[5];</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_t__card.html#a0dd27ad493e11bccc315a2b8f80f6585">   65</a></span>&#160;    uint8_t <a class="code" href="struct_t__card.html#a0dd27ad493e11bccc315a2b8f80f6585">direction</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_t__card.html#aad1b73194470d3d5b1fbb2f7deebaa78">   67</a></span>&#160;    uint8_t <a class="code" href="struct_t__card.html#aad1b73194470d3d5b1fbb2f7deebaa78">busy_flag</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="struct_t__card.html">T_card</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct_t__card.html">T_card</a> <a class="code" href="_r_f_i_d_8h.html#a7a66a75b2b6758907686c807a8a04898">MIFARE_CARD_DATABASE</a>[<a class="code" href="_r_f_i_d_8h.html#a82215e04ed0a2f9502bf2f5dcfe062f3">CARD_ARRAY_SIZE</a>];</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_f_i_d_8h.html#ada997f4b43ad0305e643dd9daf6d04af">RFID_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;uint8_t <a class="code" href="_r_f_i_d_8h.html#a9cb7426712990283fda658e8b662e24f">RFID_get_serial_number</a>(uint8_t *serial_number);           <span class="comment">// funkcja niskiego poziomu odczytuje numer seryjny karty</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;uint8_t <a class="code" href="_r_f_i_d_8h.html#ae6ebb8eaacdcf9d5f7f4eca37df30b70">RFID_search_database</a>(uint8_t *serial_number);                 <span class="comment">// funkcja niskiego poziomu przeszukuje bazę danych w poszukiwaniu danego numeru seryjnego</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;uint8_t <a class="code" href="_r_f_i_d_8h.html#a1b2693c6515ea4b2e6bc87cadf1b5335">RFID_show_database</a>(uint8_t tab[<a class="code" href="_r_f_i_d_8h.html#a82215e04ed0a2f9502bf2f5dcfe062f3">CARD_ARRAY_SIZE</a>][5]);            <span class="comment">// funkcja wysokiego poziomu kopiuje do tablicy użytkownika zawartosc bazy danych</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;uint8_t <a class="code" href="_r_f_i_d_8h.html#a2a81474b4c8c8b7b259259b31b0a54c5">RFID_delete_card_from_database</a>(<span class="keywordtype">void</span>);                                           <span class="comment">// funkcja wysokiego dodaje do bazy danych odczytany numer seryjny</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;uint8_t <a class="code" href="_r_f_i_d_8h.html#af5d58594390b228f9957d8ad475d88da">RFID_add_card_to_database</a>(<span class="keywordtype">void</span>);                                                    <span class="comment">// funkcja wysokiego poziomu usuwa z bazy danych odczytany numer seryjny</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="ttc" id="_r_f_i_d_8h_html_a7a66a75b2b6758907686c807a8a04898"><div class="ttname"><a href="_r_f_i_d_8h.html#a7a66a75b2b6758907686c807a8a04898">MIFARE_CARD_DATABASE</a></div><div class="ttdeci">T_card MIFARE_CARD_DATABASE[CARD_ARRAY_SIZE]</div><div class="ttdoc">Tablica struktur. Tablica struktur tworząca bazę danych kart RFID. </div><div class="ttdef"><b>Definition:</b> RFID.c:13</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_af5d58594390b228f9957d8ad475d88da"><div class="ttname"><a href="_r_f_i_d_8h.html#af5d58594390b228f9957d8ad475d88da">RFID_add_card_to_database</a></div><div class="ttdeci">uint8_t RFID_add_card_to_database(void)</div><div class="ttdoc">Dodaje kod zapisany w karcie do bazy danych. </div><div class="ttdef"><b>Definition:</b> RFID.c:368</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a82215e04ed0a2f9502bf2f5dcfe062f3"><div class="ttname"><a href="_r_f_i_d_8h.html#a82215e04ed0a2f9502bf2f5dcfe062f3">CARD_ARRAY_SIZE</a></div><div class="ttdeci">#define CARD_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> RFID.h:47</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a2a81474b4c8c8b7b259259b31b0a54c5"><div class="ttname"><a href="_r_f_i_d_8h.html#a2a81474b4c8c8b7b259259b31b0a54c5">RFID_delete_card_from_database</a></div><div class="ttdeci">uint8_t RFID_delete_card_from_database(void)</div><div class="ttdoc">Usuwa z bazy danych kartę przyłożoną do czytnika. </div><div class="ttdef"><b>Definition:</b> RFID.c:426</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_ae6ebb8eaacdcf9d5f7f4eca37df30b70"><div class="ttname"><a href="_r_f_i_d_8h.html#ae6ebb8eaacdcf9d5f7f4eca37df30b70">RFID_search_database</a></div><div class="ttdeci">uint8_t RFID_search_database(uint8_t *serial_number)</div><div class="ttdoc">Funkcja szuka podanego numeru seryjnego w bazie danych. </div><div class="ttdef"><b>Definition:</b> RFID.c:331</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a8cd30a54a70685a357b7785caee43be1a7a8f0f81f6aef2e61287cdecfd7390ac"><div class="ttname"><a href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1a7a8f0f81f6aef2e61287cdecfd7390ac">CARD_ADDED</a></div><div class="ttdef"><b>Definition:</b> RFID.h:52</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a8cd30a54a70685a357b7785caee43be1ae37048d839f77422192bfd3741449e1a"><div class="ttname"><a href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1ae37048d839f77422192bfd3741449e1a">CARD_DELETED</a></div><div class="ttdef"><b>Definition:</b> RFID.h:52</div></div>
+<div class="ttc" id="struct_t__card_html"><div class="ttname"><a href="struct_t__card.html">T_card</a></div><div class="ttdoc">Struktura przechowująca dane karty RFID. </div><div class="ttdef"><b>Definition:</b> RFID.h:58</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a8cd30a54a70685a357b7785caee43be1"><div class="ttname"><a href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1">DATABASE_STATE</a></div><div class="ttdeci">DATABASE_STATE</div><div class="ttdef"><b>Definition:</b> RFID.h:52</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a8cd30a54a70685a357b7785caee43be1ab2974655d59d33e3de6c8db87babc310"><div class="ttname"><a href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1ab2974655d59d33e3de6c8db87babc310">CARD_IN_BASE</a></div><div class="ttdef"><b>Definition:</b> RFID.h:52</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a1b2693c6515ea4b2e6bc87cadf1b5335"><div class="ttname"><a href="_r_f_i_d_8h.html#a1b2693c6515ea4b2e6bc87cadf1b5335">RFID_show_database</a></div><div class="ttdeci">uint8_t RFID_show_database(uint8_t tab[CARD_ARRAY_SIZE][5])</div><div class="ttdoc">Pokazuje zawartość bazy danych. Kopiuje zapisane numery seryjne z bazy danych do tablicy użytkownika...</div><div class="ttdef"><b>Definition:</b> RFID.c:405</div></div>
+<div class="ttc" id="struct_t__card_html_aad1b73194470d3d5b1fbb2f7deebaa78"><div class="ttname"><a href="struct_t__card.html#aad1b73194470d3d5b1fbb2f7deebaa78">T_card::busy_flag</a></div><div class="ttdeci">uint8_t busy_flag</div><div class="ttdoc">Status zajętości struktury. </div><div class="ttdef"><b>Definition:</b> RFID.h:67</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a9cb7426712990283fda658e8b662e24f"><div class="ttname"><a href="_r_f_i_d_8h.html#a9cb7426712990283fda658e8b662e24f">RFID_get_serial_number</a></div><div class="ttdeci">uint8_t RFID_get_serial_number(uint8_t *serial_number)</div><div class="ttdoc">Funkcja odczytująca unikalny numer seryjny karty. </div><div class="ttdef"><b>Definition:</b> RFID.c:305</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_a8cd30a54a70685a357b7785caee43be1a531e2d8187a657aeb5677e80000fc6f5"><div class="ttname"><a href="_r_f_i_d_8h.html#a8cd30a54a70685a357b7785caee43be1a531e2d8187a657aeb5677e80000fc6f5">CARD_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> RFID.h:52</div></div>
+<div class="ttc" id="_r_f_i_d_8h_html_ada997f4b43ad0305e643dd9daf6d04af"><div class="ttname"><a href="_r_f_i_d_8h.html#ada997f4b43ad0305e643dd9daf6d04af">RFID_init</a></div><div class="ttdeci">void RFID_init(void)</div><div class="ttdoc">Funkcja inicjalizująca piny GPIO, interfejs SPI oraz moduł RC522. </div><div class="ttdef"><b>Definition:</b> RFID.c:25</div></div>
+<div class="ttc" id="struct_t__card_html_a0dd27ad493e11bccc315a2b8f80f6585"><div class="ttname"><a href="struct_t__card.html#a0dd27ad493e11bccc315a2b8f80f6585">T_card::direction</a></div><div class="ttdeci">uint8_t direction</div><div class="ttdoc">Przechowuje informacje o kierunku jazdy robota. </div><div class="ttdef"><b>Definition:</b> RFID.h:65</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a68287e9f32daf61beee6bc90e5fe0fb.html">BIBLIOTEKA</a></li><li class="navelem"><a class="el" href="_r_f_i_d_8h.html">RFID.h</a></li>
+    <li class="footer">Wygenerowano Śr, 17 lut 2016 15:51:30 dla RFID - Biblioteka do obsługi kart zbliżeniowych MIFARE programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>
